@@ -3,112 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[SYSTEM_REPORT] 연남 룸싸롱 가성비 투명 분석서 - about</title>
-    <meta name="description" content="연남 룸싸롱의 투명 운영 개요 리포트! 스노든 폭로 무결성 대책과 공간 이완 공명을 담은 분석.">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta name="description" content="연남 룸싸롱 위치, 운영시간, 시설, 서비스 풀코스 정보. 연남동 룸싸롱의 모든 궁금증 해결. 예약문의 010-6279-0862. 연남 룸싸롱 가격 착한 곳의 진짜 정보 공개.">
+    <meta name="keywords" content="연남 룸싸롱, 연남 룸싸롱 가격, 연남동 룸싸롱, 연남 룸싸롱 정보, 연남 룸싸롱 시간, 연남 룸싸롱 위치, 연남 룸싸롱 예약, 연남 룸싸롱 서비스, 연남 유흥">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-yn-room-pr-1.vercel.app/">
+    <meta property="og:title" content="연남 룸싸롱 정보 싹 다 모았다 | 연남 룸싸롱">
+    <meta property="og:description" content="연남 룸싸롱 위치, 시간, 시설, 서비스까지 모르는 게 없게. 연남동 룸싸롱 꿀정보 여기 다 있어. 예약은 010-6279-0862">
+    <meta property="og:url" content="https://t3b05-yn-room-pr-1.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://t3b05-yn-room-pr-1.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>연남 룸싸롱 정보 | 연남 룸싸롱 가격 착한 곳 여기다</title>
     <style>
-        body {
-            background-color: #0b0c10;
-            color: #c5c6c7;
-            font-family: 'Outfit', 'Inter', sans-serif;
+        /* RESET */
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.8;
+            padding: 0;
         }
-        .report-shell {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #1f2833;
-            border: 1px solid #1f2833;
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 0 25px rgba(255, 51, 51, 0.15);
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
         }
-        h1, h2 {
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #f0f0f0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* TYPOGRAPHY – STREET BRUTALIST RAW */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #f7e05e;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            border-bottom: 6px solid #f7e05e;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 0.4em;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.3em;
+        }
+        p, li, blockquote, a {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+        }
+        a {
+            color: #f7e05e;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        a:hover {
             color: #fff;
-            border-bottom: 1px solid #0b0c10;
-            padding-bottom: 10px;
-            text-shadow: 0 0 8px #ff3333;
-        }
-        p {
-            font-size: 1.03rem;
-        }
-        .highlight {
-            color: #66fcf1;
-            font-weight: bold;
-        }
-        .review-box {
-            background: #050608;
-            border: 1px solid #1f2833;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 6px;
-        }
-        .btn-link {
-            display: inline-block;
-            margin-top: 25px;
-            color: #66fcf1;
+            background: #f7e05e;
             text-decoration: none;
-            border: 1px solid #66fcf1;
-            padding: 10px 20px;
-            border-radius: 4px;
-            background: rgba(102, 252, 241, 0.05);
         }
-        .btn-link:hover {
-            background: #66fcf1;
-            color: #000;
-            box-shadow: 0 0 15px #66fcf1;
+        /* STRONG BORDERS / TEXTURES */
+        .brutal-border {
+            border: 4px solid #f7e05e;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            background: #2a2a2a;
+            box-shadow: 8px 8px 0 #0a0a0a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* NAVIGATION */
+        nav {
+            background: #111;
+            border-bottom: 4px solid #f7e05e;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: 'Impact', sans-serif;
+            color: #f7e05e;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+        nav .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            padding: 0.5rem;
+        }
+        nav .hamburger span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #f7e05e;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav .nav-links a {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        nav .nav-links a:hover {
+            border-color: #f7e05e;
+            background: #2a2a2a;
+        }
+        nav .tel-link {
+            display: inline-block;
+            background: #f7e05e;
+            color: #1a1a1a;
+            font-weight: bold;
+            padding: 0.5rem 1.5rem;
+            text-decoration: none;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.2rem;
+            border: 2px solid #f7e05e;
+            transition: 0.2s;
+        }
+        nav .tel-link:hover {
+            background: transparent;
+            color: #f7e05e;
+        }
+        /* HERO */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+        /* GRID */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        /* CARD */
+        .card {
+            background: #2a2a2a;
+            border: 4px solid #f7e05e;
+            padding: 2rem;
+            box-shadow: 6px 6px 0 #0a0a0a;
+            transition: 0.2s;
+        }
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0 #0a0a0a;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f7e05e;
+            padding-bottom: 0.5rem;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed #444;
+        }
+        .card ul li::before {
+            content: "●";
+            color: #f7e05e;
+            margin-right: 0.8rem;
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 2px solid #444;
+            padding: 1.5rem 0;
+        }
+        .faq-item summary {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.3rem;
+            color: #f7e05e;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.8rem;
+            transition: 0.3s;
+        }
+        .faq-item[open] summary::after {
+            content: "-";
+        }
+        .faq-item p {
+            margin-top: 1rem;
+            padding-left: 1rem;
+        }
+        /* FOOTER */
+        footer {
+            background: #0a0a0a;
+            border-top: 4px solid #f7e05e;
+            padding: 2rem 0;
+            margin-top: auto;
+            text-align: center;
+        }
+        footer a {
+            color: #f7e05e;
+        }
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            nav .hamburger {
+                display: flex;
+            }
+            nav .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background: #111;
+                padding: 1rem 0;
+                border-top: 2px solid #f7e05e;
+                margin-top: 1rem;
+            }
+            nav .nav-links.active {
+                display: flex;
+            }
+            nav .nav-links a {
+                padding: 1rem;
+                border-bottom: 1px solid #333;
+            }
+            nav .tel-link {
+                margin-top: 1rem;
+                display: block;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">연남룸싸롱</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/price">가격</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="/contact">예약</a></li>
+            </ul>
+            <a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </nav>
 
-<div class="report-shell">
-    <h1>REPORT: 연남 가성비 룸싸롱 무결성 보안 프로토콜</h1>
-    <p>
-        어이 브로, 형이 정교하게 오케스트레이션한 <span class="highlight">연남 룸싸롱 투명 가이드망</span>의 소개 분석 보고서이다.
-        우리는 연남역 오피스 링을 관통하며 매일 과도한 격무에 시달리는 브로들의 대뇌 인프라 피로를 청소하고, 
-        가장 정직한 정찰 요율을 선언하여 불량 삐끼들의 악질 요금 오버플로우 바가지 꼼수를 완벽 격리하기 위해 탄생한 정보망이다.
-    </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>연남 룸싸롱 정보<br>몰랐던 진짜 이야기</h1>
+                <p>야, 연남동에서 룸싸롱 하나 제대로 찾고 싶다면? 여기 다 모아놨다. 위치, 시간, 시설, 서비스 – 궁금한 거 전부 다 알려줄게. <strong>010-6279-0862</strong> 전화하면 더 빠르다!</p>
+            </div>
+        </section>
 
-    <h2>🔒 NSA PRISM 도청 거미줄 폭로를 관통하는 프라이버시 물리 법칙</h2>
-    <p>
-        앞선 메인 쉘에서 소개했듯, 에드워드 스노든이 폭로한 NSA의 프리즘(PRISM)망은 우리의 모든 커뮤니케이션 패킷을 몰래 훔쳐보는 악의적인 중앙 집권식 감시망이었지. 
-        연남 일대의 양심 없는 삐끼들도 똑같이 복잡한 요금제 장난과 변종 추가금 옵션으로 브로들의 대뇌 버퍼를 교란시킨다.
-    </p>
-    <p>
-        우리는 이러한 인지 기만망에 대항하여, 100% 깔끔하게 작동하는 다이렉트 핫라인(<span class="highlight">010-6279-0862</span>)을 통해서만 예약 세션을 활성화한다. 
-        그 어떤 복잡한 꼼수나 변형 추가금 마찰이 들어설 여지를 칼같이 삭제해버렸기 때문에, 
-        방문하는 비즈니스 브로들은 오직 마음 편안하게 음향 시스템에 자기 목소리를 공명시켜 뇌 세포의 이완을 체감하는 힐링에만 포커싱할 수 있어 브로.
-    </p>
-
-    <h2>📊 연남 오피스 밸리 실제 이용자 UGC 피드</h2>
-    <p>
-        다음 검증 피드는 연남 오피스 단지에서 직접 전화를 걸어 예약을 확보하고 요금 스트레스 없이 2차를 완수한 유저들의 내돈내산 요약 정보이다:
-    </p>
-    
-    <div class="review-box">
-        <h3>"연남 비즈니스 정브로" ⭐⭐⭐⭐⭐</h3>
-        <p>프로젝트 성료 후 거래처 모시고 방문했는데 요금 체계가 완벽히 고정 상수로 운영되어 골치 아픈 마찰이 1도 없었습니다. 음향 무선 하드웨어의 출력이 엄청 짱짱하더군요.</p>
-    </div>
-
-    <div class="review-box">
-        <h3>"연남동 IT개발팀 이팀장" ⭐⭐⭐⭐⭐</h3>
-        <p>인터넷 가짜 대행사 광고 패킷에 수없이 털렸는데, 형이 인증한 010-6279-0862 통화 연결 즉시 아주 훌륭한 룸을 잡았습니다. 가격 무결성 100% 만족입니다!</p>
-    </div>
-
-    <div class="review-box">
-        <h3>"연남역 파트장 한과장" ⭐⭐⭐⭐⭐</h3>
-        <p>덤터기 실랑이로 뇌 밸런스를 갉아먹지 않아서 너무나 든든한 가이드 시스템입니다. 연남에서 룸싸롱 갈 거면 핫라인 전화가 단연 원탑입니다 브로!</p>
-    </div>
-
-    <p>
-        더 이상 악질 삐끼 정보망의 오염된 미끼 패킷에 네 소중한 자산 리소스를 낭비하지 마라.
-        아래 핫라인으로 예약 전화를 걸어 연남 최고의 VIP 룸을 무조건 마운트해라 브로!
-    </p>
-
-    <a href="index.html" class="btn-link">← 메인 콘솔로 복귀</a>
-    <a href="tel:010-6279-0862" class="btn-link" style="border-color: #ff3333; color: #fff; background: #7f1d1d;">📞 즉시 예약 통화</a>
-</div>
-
+        <section class="container">
+            <div class="brutal-border">
+                <h2>📍 연남 룸싸롱 기본 정보</h2>
+                <p>연남동 중심가, 홍대입구역에서 걸어서 5분 거리. 골목 하나만 들어가면 조용하면서도 핫한 분위기가 펼쳐져. 주차는 가게 앞 2대 가능하고, 근처 공영주차장도 있어. 오후 8시부터 새벽 4시까지 운영하는데, 금토일은 새벽 5시까지 연장됨. <strong>미리 전화하고 오는 게 진짜 꿀팁</strong> – 대기 없이 바로 입장 가능.</p>
+                <p><strong>주소:</strong> 서울 마포구 연남동 567-12 (연남로 2
 </body>
 </html>
